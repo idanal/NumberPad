@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87B1221C198B7772001FD375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B1221B198B7772001FD375 /* Foundation.framework */; };
+		87B1221E198B7772001FD375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B1221D198B7772001FD375 /* CoreGraphics.framework */; };
+		87B12220198B7772001FD375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B1221F198B7772001FD375 /* UIKit.framework */; };
+		87B12226198B7772001FD375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87B12224198B7772001FD375 /* InfoPlist.strings */; };
+		87B12228198B7772001FD375 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B12227198B7772001FD375 /* main.m */; };
+		87B1222C198B7772001FD375 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1222B198B7772001FD375 /* AppDelegate.m */; };
+		87B1222F198B7772001FD375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B1222D198B7772001FD375 /* Main.storyboard */; };
+		87B12232198B7772001FD375 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B12231198B7772001FD375 /* ViewController.m */; };
+		87B12234198B7772001FD375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B12233198B7772001FD375 /* Images.xcassets */; };
+		87B12253198B7794001FD375 /* NumberPad-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B12250198B7794001FD375 /* NumberPad-back@2x.png */; };
+		87B12254198B7794001FD375 /* NumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B12251198B7794001FD375 /* NumberPad.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87B12218198B7772001FD375 /* NumberPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B1221B198B7772001FD375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87B1221D198B7772001FD375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87B1221F198B7772001FD375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87B12223198B7772001FD375 /* NumberPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NumberPad-Info.plist"; sourceTree = "<group>"; };
+		87B12225198B7772001FD375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		87B12227198B7772001FD375 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87B12229198B7772001FD375 /* NumberPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NumberPad-Prefix.pch"; sourceTree = "<group>"; };
+		87B1222A198B7772001FD375 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87B1222B198B7772001FD375 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87B1222E198B7772001FD375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87B12230198B7772001FD375 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87B12231198B7772001FD375 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87B12233198B7772001FD375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		87B1223A198B7773001FD375 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		87B12250198B7794001FD375 /* NumberPad-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NumberPad-back@2x.png"; sourceTree = "<group>"; };
+		87B12251198B7794001FD375 /* NumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPad.m; sourceTree = "<group>"; };
+		87B12252198B7794001FD375 /* NumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberPad.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87B12215198B7772001FD375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B1221E198B7772001FD375 /* CoreGraphics.framework in Frameworks */,
+				87B12220198B7772001FD375 /* UIKit.framework in Frameworks */,
+				87B1221C198B7772001FD375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87B1220F198B7771001FD375 = {
+			isa = PBXGroup;
+			children = (
+				87B12221198B7772001FD375 /* NumberPad */,
+				87B1221A198B7772001FD375 /* Frameworks */,
+				87B12219198B7772001FD375 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87B12219198B7772001FD375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87B12218198B7772001FD375 /* NumberPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87B1221A198B7772001FD375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B1221B198B7772001FD375 /* Foundation.framework */,
+				87B1221D198B7772001FD375 /* CoreGraphics.framework */,
+				87B1221F198B7772001FD375 /* UIKit.framework */,
+				87B1223A198B7773001FD375 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87B12221198B7772001FD375 /* NumberPad */ = {
+			isa = PBXGroup;
+			children = (
+				87B12250198B7794001FD375 /* NumberPad-back@2x.png */,
+				87B12251198B7794001FD375 /* NumberPad.m */,
+				87B12252198B7794001FD375 /* NumberPad.h */,
+				87B1222A198B7772001FD375 /* AppDelegate.h */,
+				87B1222B198B7772001FD375 /* AppDelegate.m */,
+				87B1222D198B7772001FD375 /* Main.storyboard */,
+				87B12230198B7772001FD375 /* ViewController.h */,
+				87B12231198B7772001FD375 /* ViewController.m */,
+				87B12233198B7772001FD375 /* Images.xcassets */,
+				87B12222198B7772001FD375 /* Supporting Files */,
+			);
+			path = NumberPad;
+			sourceTree = "<group>";
+		};
+		87B12222198B7772001FD375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87B12223198B7772001FD375 /* NumberPad-Info.plist */,
+				87B12224198B7772001FD375 /* InfoPlist.strings */,
+				87B12227198B7772001FD375 /* main.m */,
+				87B12229198B7772001FD375 /* NumberPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87B12217198B7772001FD375 /* NumberPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B1224A198B7773001FD375 /* Build configuration list for PBXNativeTarget "NumberPad" */;
+			buildPhases = (
+				87B12214198B7772001FD375 /* Sources */,
+				87B12215198B7772001FD375 /* Frameworks */,
+				87B12216198B7772001FD375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumberPad;
+			productName = NumberPad;
+			productReference = 87B12218198B7772001FD375 /* NumberPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87B12210198B7771001FD375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = danal;
+			};
+			buildConfigurationList = 87B12213198B7771001FD375 /* Build configuration list for PBXProject "NumberPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87B1220F198B7771001FD375;
+			productRefGroup = 87B12219198B7772001FD375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87B12217198B7772001FD375 /* NumberPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87B12216198B7772001FD375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B12234198B7772001FD375 /* Images.xcassets in Resources */,
+				87B12226198B7772001FD375 /* InfoPlist.strings in Resources */,
+				87B12253198B7794001FD375 /* NumberPad-back@2x.png in Resources */,
+				87B1222F198B7772001FD375 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87B12214198B7772001FD375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B12254198B7794001FD375 /* NumberPad.m in Sources */,
+				87B12232198B7772001FD375 /* ViewController.m in Sources */,
+				87B1222C198B7772001FD375 /* AppDelegate.m in Sources */,
+				87B12228198B7772001FD375 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87B12224198B7772001FD375 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B12225198B7772001FD375 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		87B1222D198B7772001FD375 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B1222E198B7772001FD375 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87B12248198B7773001FD375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87B12249198B7773001FD375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87B1224B198B7773001FD375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NumberPad/NumberPad-Prefix.pch";
+				INFOPLIST_FILE = "NumberPad/NumberPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		87B1224C198B7773001FD375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NumberPad/NumberPad-Prefix.pch";
+				INFOPLIST_FILE = "NumberPad/NumberPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87B12213198B7771001FD375 /* Build configuration list for PBXProject "NumberPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B12248198B7773001FD375 /* Debug */,
+				87B12249198B7773001FD375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B1224A198B7773001FD375 /* Build configuration list for PBXNativeTarget "NumberPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B1224B198B7773001FD375 /* Debug */,
+				87B1224C198B7773001FD375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87B12210198B7771001FD375 /* Project object */;
+}
