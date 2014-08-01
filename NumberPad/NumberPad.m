@@ -153,9 +153,9 @@
 }
 
 + (instancetype)instance{
-    static NumberPad *__npad = nil;
+    NumberPad *__npad = nil;
     if (!__npad){
-        __npad = [[self alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
+        __npad = [[[self alloc] initWithFrame:CGRectMake(0, 0, 320, 216)] autorelease];
     }
     [__npad setReturnKey:NSLocalizedString(@"Done", nil)];
     
