@@ -15,10 +15,16 @@
 
 @interface NumberPad ()
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, assign) UITextField *textField;
 @property (nonatomic, assign) NumberPadGrid *returnGrid;
 @end
 
 @implementation NumberPad
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super dealloc];
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -54,6 +60,8 @@
             grid.active = NO;
             [self addSubview:grid];
             [grid release];
+            
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginEditing:) name:UITextFieldTextDidBeginEditingNotification object:nil];
         }
         
     }
@@ -88,6 +96,10 @@
     _returnGrid.numberLabel.text = key;
 }
 
+- (void)beginEditing:(NSNotification *)noti{
+    _textField = noti.object;
+}
+
 #pragma mark - Touches
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *t = [touches anyObject];
@@ -109,7 +121,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     //Find the textfield
-    UITextField *textField = (id)self.nextResponder;
+    UITextField *textField = self.textField;
     
     UITouch *t = [touches anyObject];
     CGPoint p = [t locationInView:self];
@@ -153,7 +165,7 @@
 }
 
 + (instancetype)instance{
-    NumberPad *__npad = nil;
+    static NumberPad *__npad = nil;
     if (!__npad){
         __npad = [[[self alloc] initWithFrame:CGRectMake(0, 0, 320, 216)] autorelease];
     }
