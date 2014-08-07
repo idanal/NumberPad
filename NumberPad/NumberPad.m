@@ -134,7 +134,7 @@
             else if (v.isBackspace){
                 if ([textField.text length] > 0){
                     if (textField.delegate && [textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]){
-                        BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(textField.text.length-1, -1) replacementString:nil];
+                        BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(textField.text.length-1, 1) replacementString:nil];
                         if (b){
                             textField.text = [textField.text substringToIndex:textField.text.length - 1];
                         }
@@ -145,7 +145,7 @@
             }
             else {  //Number
                 if (textField.delegate && [textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]){
-                    BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(textField.text.length-1, 1) replacementString:v.numberLabel.text];
+                    BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(textField.text.length-1, 0) replacementString:v.numberLabel.text];
                     if (b){
                         textField.text = [textField.text stringByAppendingString:v.numberLabel.text];
                     }
