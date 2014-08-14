@@ -141,6 +141,7 @@
                     } else {
                         textField.text = [textField.text substringToIndex:textField.text.length - 1];
                     }
+                    [textField sendActionsForControlEvents:UIControlEventEditingChanged];
                 }
             }
             else {  //Number
@@ -153,6 +154,7 @@
                 } else {
                     textField.text = [textField.text stringByAppendingString:v.numberLabel.text];
                 }
+                [textField sendActionsForControlEvents:UIControlEventEditingChanged];
             }
         }
     }
