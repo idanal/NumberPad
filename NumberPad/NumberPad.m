@@ -146,7 +146,8 @@
             }
             else {  //Number
                 if (textField.delegate && [textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]){
-                    BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(textField.text.length-1, 0) replacementString:v.numberLabel.text];
+                    NSInteger loc = [textField.text length] == 0 ? 0 : [textField.text length];
+                    BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(loc, 0) replacementString:v.numberLabel.text];
                     if (b){
                         textField.text = [textField.text stringByAppendingString:v.numberLabel.text];
                     }
