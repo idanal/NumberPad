@@ -100,6 +100,17 @@
     _textField = noti.object;
 }
 
+- (NSRange)rangeFromTextRange:(UITextRange *)textRange inTextView:(id<UITextInput>)textView {
+    
+    UITextPosition* beginning = textView.beginningOfDocument;
+    UITextPosition* start = textRange.start;
+    UITextPosition* end = textRange.end;
+    
+    const NSInteger location = [textView offsetFromPosition:beginning toPosition:start];
+    const NSInteger length = [textView offsetFromPosition:start toPosition:end];
+    return NSMakeRange(location, length);
+}
+
 #pragma mark - Touches
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *t = [touches anyObject];
@@ -133,27 +144,32 @@
             }
             else if (v.isBackspace){
                 if ([textField.text length] > 0){
+                    NSRange range = [self rangeFromTextRange:textField.selectedTextRange inTextView:textField];
+                    if (range.length == 0) {
+                        range.location = range.location-1;
+                        range.length = 1;
+                    }
                     if (textField.delegate && [textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]){
                         BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(textField.text.length-1, 1) replacementString:@""];
                         if (b){
-                            textField.text = [textField.text substringToIndex:textField.text.length - 1];
+                            textField.text = [textField.text stringByReplacingCharactersInRange:range withString:@""];
                         }
                     } else {
-                        textField.text = [textField.text substringToIndex:textField.text.length - 1];
+                        textField.text = [textField.text stringByReplacingCharactersInRange:range withString:@""];
                     }
                     [textField sendActionsForControlEvents:UIControlEventEditingChanged];
                 }
             }
             else {  //Number
                 if (textField.delegate && [textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]){
-                    NSInteger loc = [textField.text length] == 0 ? 0 : [textField.text length];
-                    BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:NSMakeRange(loc, 0) replacementString:v.numberLabel.text];
+                    NSRange range = [self rangeFromTextRange:textField.selectedTextRange inTextView:textField];
+                    BOOL b = [textField.delegate textField:textField shouldChangeCharactersInRange:range replacementString:v.numberLabel.text];
                     if (b){
-                        textField.text = [textField.text stringByAppendingString:v.numberLabel.text];
+                        [textField replaceRange:textField.selectedTextRange withText:v.numberLabel.text];
                     }
                     
                 } else {
-                    textField.text = [textField.text stringByAppendingString:v.numberLabel.text];
+                    [textField replaceRange:textField.selectedTextRange withText:v.numberLabel.text];
                 }
                 [textField sendActionsForControlEvents:UIControlEventEditingChanged];
             }

@@ -33,6 +33,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
+    NSLog(@"%@",textField.text);
     return YES;
 }
 

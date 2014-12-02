@@ -10,29 +10,29 @@
 	<string>NumberPad</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E437758E-702D-46F6-89C4-DF46A2A8FA91</key>
+		<key>1E3089F91435C7BE6E01A4ADF1306C9BA301A960</key>
 		<string>https://github.com/idanal/NumberPad.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>NumberPad.xcodeproj/project.xcworkspace</string>
+	<string>NumberPad.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E437758E-702D-46F6-89C4-DF46A2A8FA91</key>
+		<key>1E3089F91435C7BE6E01A4ADF1306C9BA301A960</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/idanal/NumberPad.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E437758E-702D-46F6-89C4-DF46A2A8FA91</string>
+	<string>1E3089F91435C7BE6E01A4ADF1306C9BA301A960</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E437758E-702D-46F6-89C4-DF46A2A8FA91</string>
+			<string>1E3089F91435C7BE6E01A4ADF1306C9BA301A960</string>
 			<key>IDESourceControlWCCName</key>
 			<string>NumberPad</string>
 		</dict>
